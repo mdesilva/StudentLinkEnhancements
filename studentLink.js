@@ -34,6 +34,3 @@ if(e){
 });
 
 console.log("ratings app done traversing the page")
-
-
-console.log("Script finished")

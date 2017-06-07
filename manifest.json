@@ -1,16 +1,22 @@
 {
 "manifest_version": 2,
-"name": "Rate my BU Professor",
-"version": "1.0",
+"name": "BU Student Link Enhancer",
+"description": "Adds additional functionality to the BU student link",
+"version": "1.1",
 "content_scripts": [
   {
-    "matches": ["https://*.bu.edu/link*", "http://*.ratemyprofessors.com/search.jsp*"], 
-    "js": ["jquery-3.2.1.min.js","content.js"]
+    "matches": ["https://*.bu.edu/link*"],
+    "js": ["jquery-3.2.1.min.js","studentLink.js"]
+  },
+  {
+    "matches":["http://*.ratemyprofessors.com/search.jsp*"],
+    "js": ["jquery-3.2.1.min.js", "rmp.js"]
   }
 ],
 
 "page_action": {
   "default_title": "RMP activated",
   "default_popup": "popup.html"
-}
+},
+"web_accessible_resources":["rmpLogo.png"]
 }
