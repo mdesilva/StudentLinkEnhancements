@@ -1,0 +1,5 @@
+To do:
+
+create array to keep track of professor names. This way, you have one link for each professor instead of multiple.
+
+once you reach the rate my professor results page, redirect user to prof page if only one result exists. 

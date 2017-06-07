@@ -1,0 +1,16 @@
+{
+"manifest_version": 2,
+"name": "Rate my BU Professor",
+"version": "1.0",
+"content_scripts": [
+  {
+    "matches": ["https://*.bu.edu/link*", "http://*.ratemyprofessors.com/search.jsp*"], 
+    "js": ["jquery-3.2.1.min.js","content.js"]
+  }
+],
+
+"page_action": {
+  "default_title": "RMP activated",
+  "default_popup": "popup.html"
+}
+}
